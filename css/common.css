@@ -1,0 +1,132 @@
+body, div, ul, li, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+.header, .container, .footer{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+select {
+  width: 200px;
+  height: 25px;
+  font: normal 125% 'Times New Roman', arial, sans-serif;
+  border: #FEFEFE 1px solid;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+
+.header{
+  width: 1000px;
+}
+
+#logo {
+  width: 1000px;
+  position: relative;
+  height: 200px;
+  background-image: url(img/logo.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#logo_text {
+  position: absolute;
+  display: block;
+  right: 0;
+  float: right;
+  text-align: center;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: cornflowerblue;
+  z-index: 999;
+}
+
+.nav ul li {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding: 10px 5px;
+  margin: 0px 5px;
+  position: relative;
+}
+
+.nav ul li.selected {
+  margin: 0;
+  background: #f8f8f8;
+  color: #fff;
+}
+
+.nav ul li.selected a {
+  color: black;
+}
+
+.nav ul li a {
+  color: white;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: #f66;
+}
+
+.nav ul li span {
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background: #f66;
+  top: 58px;
+  left: 50%;
+}
+
+.container {
+  width: 1000px;
+  background-color: rgb(241, 237, 237);
+}
+
+.container h3 {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 40px 0 40px 40px;
+  font: normal 150% arial, sans-serif;
+  color: black;
+  letter-spacing: 0em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.container p{
+	line-height: 1.7em;
+	font: normal 135% 'Times New Roman', arial, sans-serif;
+	color:#222;
+	margin: 0 0 0 15px;
+	padding: 0 20px 15px 10px;
+}
+
+.footer {
+  width: 1000px;
+	height: 33px;
+	padding: 15px 0 25px 0;
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-weight:bold;
+  font-size: 120%;
+  position: relative;
+  background-color: cornflowerblue;
+}
